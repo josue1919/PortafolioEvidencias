@@ -54,7 +54,7 @@
 				<!-- One -->
 				<section id="one" class="wrapper style2 spotlights">
 					<section>
-						<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+						<a href="#" class="image"><img src="/assets/img/pic03.jpg" alt="" data-position="center center" /></a>
 						<div class="content">
 							<div class="inner">
 								<h2>Juego de Dados</h2>
@@ -72,7 +72,7 @@
 						</div>
 					</section>
 					<section>
-						<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+						<a href="#" class="image"></a> ><img src="/assets/img/pic01.jpg" alt="" data-position="top center" /></a>
 						<div class="content">
 							<div class="inner">
 								<h2>Máximo común divisor </h2>
@@ -89,7 +89,7 @@ Desarrollamos una aplicación que debe solicitar dos números y encontrar su má
 						</div>
 					</section>
 					<section>
-						<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+						<a href="#" class="image"><img src="/assets/img/pic02.jpg" alt="" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
 								<h2>Gestión de cronogramas </h2>
@@ -153,70 +153,100 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 									<li>GitHub</li>
 								</section>
 
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+							</div>						
 						</div>
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+				<section id="three" class="wrapper style1 fade-up">
+					<div class="inner">
+					  <h2>Contáctame</h2>
+					  <p>Por este medio, puedes acceder a mis redes sociales o enviarme un correo para
+						  estar en contacto conmigo.
+					  </p>
+					  <div class="split style1">
+						
+						<section id="app">
+						  
+						  <div class="row">
+							<div class="col-lg-12">
+							  <label>
+								Asunto:
+							  </label>
+							  <input class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
+							  </input>
 							</div>
-						</div>
+						  </div>
+						 
+						  <div class="row">
+							
+							<div class="col-lg-12">
+							  <br><label>
+								Nombre:
+							  </label>
+							  <input class="form-control" type="text" v-model="from_name" placeholder="Nombre">
+			  
+							  </input>
+			  
+							</div>
+			  
+							<div class="col-md-6"> 
+							  <br><label>
+								Correo:
+							  </label>
+							  <input  type="email" v-model="from_email" placeholder="example@gmail.com">
+							  </input>
+							</div>
+						  </div>
+			  
+						  <div class="row">
+							<div class="col-lg-6"> 
+							 <br> <label> Mensaje:</label>
+							
+							</div>
+							  
+							<br>
+							<textarea class="form-control" rows="6"  v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
+							<div class="col-lg-12">
+							  <br><button style="padding-right: 50px; padding-left: 50px;" @click="enviar" class="btn btn-success"> Enviar mensaje </button>
+			  
+							</div>
+						  </div>
+			  
+						  
+						 
+						</section>
+						<section>
+						  <ul class="contact">
+							<li>
+							  <h3>Residencia:</h3>
+							  <span>México. <br>
+								Mérida, Yucatán.<br /></span>
+							</li>
+							<li>
+							  <h3>Email</h3>
+							  <a href="https://www.gmail.com" target="_blank">rodrigo.hu.cervantes@gmail.com</a>
+							</li>
+							<li>
+							  <h3>Telefono</h3>
+							  <span>(999) 0000000</span>
+							</li>
+							<li>
+							  <h3>Redes Sociales</h3>
+							  <ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>							
+								<li><a href="https://www.linkedin.com/in/rodrigo-arturo-1a5ab9200/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							  </ul>
+							</li>
+						  </ul>
+						</section>
+			  
+			  
+					  </div>
+					</div>
+			  
+			  
 					</section>
 
 			</div>
@@ -238,6 +268,50 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 			<script src="/assets/js/breakpoints.min.js"></script>
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main2.js"></script>
+
+			
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
+			</script>
+			<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+			<script>
+			  (function () {
+				emailjs.init("user_MqfB0sKiLPXMcK9i9LXjH");
+			  })();
+			  const vue = new Vue({
+				el: '#app',
+				data() {
+				  return {
+					from_name: '',
+					from_email: '',
+					message: '',
+					subject: '',
+				  }
+				},
+				methods: {
+				  enviar() {
+					let data = {
+					  from_name: this.from_name,
+					  from_email: this.from_email,
+					  message: this.message,
+					  subject: this.subject,
+					};
+		
+					emailjs.send("gmail", "template_m96r8uj", data)
+					  .then(function (response) {
+						if (response.text === 'OK') {
+						  alert('El correo se ha enviado de forma exitosa');
+						}
+						console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+					  }, function (err) {
+						alert('Ocurrió un problema al enviar el correo');
+						console.log("FAILED. error=", err);
+					  });
+				  }
+				}
+			  });
+			</script>
+		
 
 	</body>
 </html>
