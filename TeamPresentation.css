@@ -116,11 +116,8 @@ visibility: visible;
 @media screen and (max-width:978px)
 {
     .container{
-        /* flex-wrap: wrap;
-        flex-direction: column; */
-        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        align-items: space-between;
     }
 
     .titlecenter
@@ -131,39 +128,8 @@ visibility: visible;
     }
 
     .card{
-        max-width: 300px;
+        max-width: 700px;
         margin: 20px 0;
-        margin-bottom: 20px;
-        font-size:24pt;
-       
-        
     }
-
-    .card:hover{
-        height: 430px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-       
-       }
-       /* .card:hover .bottom-text{
-        opacity: 1;
-        visibility: visible;
-        margin-bottom: 20px;
-        }
-
-        .bottom-text{
-            margin-bottom: 20px;
-        } */
-
-        
-        .text{
-            
-            overflow:hidden;
-    
-            white-space:nowrap;
-        
-            text-overflow: ellipsis;
-            font-size: 20px;
-        }
-        
 }
 
