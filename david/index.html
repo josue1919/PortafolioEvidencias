@@ -1,141 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJQFCVLDF5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <title>
+      Portaforlio
+      Josue
+    </title>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJQFCVLDF5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
   gtag('config', 'G-LJQFCVLDF5');
 </script>
   <!-- finaliza Global site tag (gtag.js) - Google Analytics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio David</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Portafolio Rodrigo</title>
+    <link rel="stylesheet" href="../assets/css/main2.css">
     <script src="https://kit.fontawesome.com/6b37ac19b8.js" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
   </head>
 
-<body>
-   <nav class="barralateral" id="barralateral">
-      
-       <section>
-        <button class="switch" id="switch" onclick="activar()">
-          <span><i class="fas fa-sun"></i></span>
-          <span><i class="fas fa-moon"></i></span>
-        </button>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Quien soy?</a></li>
+							<li><a href="#one">Mis trabajos</a></li>
+							<li><a href="#two">Habilidades</a></li>
+              <li><a href="#three">Contacto</a></li>
+              <li><a href="../index.html">Regresar</a></li>
 
-       </section>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-       <button class="barralateral-transparente"><a href="#soy">¿Quien soy?</a></button>
-       <button class="barralateral-transparente"><a href="#trabajos">Mis trabajos</a></button>
-       <button class="barralateral-transparente"><a href="#contacto">Contacto</a></button>
-       <button class="barralateral-transparente"><a href="../index.html">⬐Regresar</a></button>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-     
-    
-   </nav>
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>¿Quien soy?</h1>
+							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
+              and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p> -->
+              <p>
+                Mi nombre es Josue David Figueroa Flores Vivo en Mérida, Yucatán, México.
+                Y tengo 20 años
+              </p>
 
+              <p>
+                Actualmente estoy estudiando En la Universidad tecnológica
+                metropolitana, la carrera en ingenieria en desarrollo y gestion de 
+                software, cursando actualente el septimo cuatrimestre, con TSU en desarrollo de software
+                multiplataforma
+              </p>
+							<!-- <ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul> -->
+						</div>
+					</section>
 
-   <section class="contenedor" id="contenedor">
-    <div class="contenedor_quiensoy">
-        <img src="/assets/img/foto_josue.jpg" alt="">
-        <a name="soy"></a>
-        <h1>¿Quien soy?</h1>
-        <p>
-          Mi nombre es Josué David Figueroa Flores
-          de Mérida,Yucatán, México.
-        </p>
-        <p>
-          Vivo en la localidad de Santa cruz palomeque a 25 min de la  ciudad
-          de Mérida, y aproximadamente 15 minutos de la Universidad Tecnologica
-          Metropolitana.
-          Actualmente estoy estudiando el 7 cuatrimestre de la carrera en ingenieria 
-          en desarrollo y gestion de software, con TSU en desarrollo de software
-          multiplataforma.
-        </p>
-    </div>
-    
-    <div class="contenedor_trabajos">
-      <a name="trabajos"></a>
-        <h1>Trabajos</h1>
-        <!-- <p>
-          Durante mi estancia en la UTM, aprendi con el lenguaje de programacion C#
-          pero en mis estadias, aprendi Javascript
-        </p> -->
-        <section class="contenedor_trabajos-tecnologias">
-        <div>
-          <p style="color:red">
-            Conocimientos en:
-          </p>
-          <ul>
-            <li>.Net</li>
-            <li>Reactjs</li>
-            <li>Flutter</li>
-            <li>Sqlserver</li>
-          </ul>
-        </div>
-    
-        <div class="contenedor_trabajos-tecnologias-img">
-          <img src="/assets/img/javascript.png" alt="">
-          <img src="/assets/img/flutter.jpg" alt="">
-          <img src="/assets/img/net.png" alt="">
-          <img src="/assets/img/sql.png" alt="">
-        </div>
-        </section>
-    
-        <!-- <p style="color:red">
-          Proyectos
-    
-        </p> -->
-        <p>
-          Los Dados: Un Proyecto personal cuando estaba en el proceso de
-          aprendisaje de Javascript, el cual es un juego que consta de lanzar un par
-          de dados, y otro par mas que simula ser lanzado por la "maquina", el que 
-          tenga el puntaje mas alto gana. Este proyecto se realizo con css,html:5
-          y Js vanilla
-    
-        
-        </p>
-        <p>
-          MCD: una tarea de la materia de seguridad informatica el cual 
-          pedia especificamente solucionar una problematica con el 
-          lenguaje de Javascript, el cual devia encontrar el maximo comun divisor 
-          de dos numeros
-        </p>
-        <p>
-          Gestion de tutores: Una tarea de la Materia de experiencia de usuario en la cual deviamos
-          diseñar, una plantilla web para una gestion de las actividades de tutores, la cual
-          mostraria su cronograma de actividades.
-        </p>
-    
-        <!-- inicia el contenedor de las imagens de los proyectos -->
-      <section class="contenedor_trabajos-imgtrabajo">
-        <p>El juego de los dados <a href="https://josue1919.github.io/miniproyecto3/">Ver trabajo</a></p>
-        <img src="/assets/img/dados.png" alt="dados">
-        <p>MCD <a href="">ver trabajo</a></p>
-        <img src="/assets/img/mcd.png" alt="">
-      </section>
-      <div class="contenedor_contacto">
-        <a name="contacto"></a>
-        <h1 >Contacto</h1>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/josu%C3%A9-david-figueroa-flores-2842181b2/">Contactar</a></p>
-        <p>Facebook: Josue Figueroa</p>
-        <button> <a href="/correos/">Enviarme Un correo</a></button>
-      </div>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Juego de Dados</h2>
+                  <!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p> -->
+                  <p>
+                    Como parte de mi aprendizaje de Javascript, me propuse desarrollar
+                    un pequeño y sencillo juego de dos dados con js vanilla, el cual consta de un jugador
+                    y la "computadora", el cual al lanzar un par de dados, gana el del mayor 
+                    puntaje
+                  </p>
+									<ul class="actions">
+										<li><a href="https://josue1919.github.io/miniproyecto3/" class="button">Ver Proyecto</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Máximo común divisor </h2>
+                  <!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p> -->
+                  <p>
+                    Como parte de una tarea de la materia de seguridad informática 
+Desarrollamos una aplicación que debe solicitar dos números y encontrar su máximo común divisor, el problema pedía específicamente resolver la problemática con JavaScript.
 
-   
-    </div>
-   
- 
-    
-   
-   
-   
-   </section>
+                  </p>
+									<ul class="actions">
+										<li><a href="https://mcd-ff684.web.app/" class="button">Ver Proyecto</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Gestión de cronogramas </h2>
+                  <!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p> -->
+                  <p>
+                    
+Como parte de la materia de experiencia de usuario, nos pidieron elaborar una plantilla HTML, la cual serviría para que tutores pudieran generar un cronograma de actividades en base a actividades establecidas, pero se tendría que tomar en cuenta todo lo aprendido en clase con respecto a la materia.
 
-</body>
+                  </p>
+									<ul class="actions">
+										<li><a href="https://proyecto-ux01.web.app/" class="button">Ver Proyecto</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Habilidades</h2>
+              <!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p> -->
+              <p>
+                En la UTM se aprende con el lenguaje de C#, pero también durante  la estadía y otras materias, necesitamos de aprender nuevas cosas, algunas de ellas son:
+              </p>
+							<div class="features">
+								<section>
+									<!-- <span class="icon solid major fa-code"></span> -->
+									<h3>.Net</h3>
+                  <!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+                  <p>
+                    
+                  En los primeros proyectos para desarrollar en consola utilizábamos C#, para escritorio C# con Windows forms , en Web aprendimos con ASP .Net
+
+                  </p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Aliquam sed nullam</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Sed erat ullam corper</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Veroeros quis lorem</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Urna quis bibendum</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Aliquam urna dapibus</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main2.js"></script>
+
+	</body>
 </html>
