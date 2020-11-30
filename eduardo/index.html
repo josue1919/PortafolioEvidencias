@@ -1,141 +1,311 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJQFCVLDF5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>Mi Perfil</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="sass" />
+  <noscript>
+    <link rel="stylesheet" href="css/noscript.css" /></noscript>
+</head>
 
-  gtag('config', 'G-LJQFCVLDF5');
-</script>
-  <!-- finaliza Global site tag (gtag.js) - Google Analytics -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Eduardo</title>
-    <link rel="stylesheet" href="/assets/css/josue.css">
-    <script src="https://kit.fontawesome.com/6b37ac19b8.js" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-  </head>
+<body class="is-preload">
 
-<body>
-   <nav class="barralateral" id="barralateral">
-      
-       <section>
-        <button class="switch" id="switch" onclick="activar()">
-          <span><i class="fas fa-sun"></i></span>
-          <span><i class="fas fa-moon"></i></span>
-        </button>
-
-       </section>
-
-       <button class="barralateral-transparente"><a href="#soy">¿Quien soy?</a></button>
-       <button class="barralateral-transparente"><a href="#trabajos">Mis trabajos</a></button>
-       <button class="barralateral-transparente"><a href="#contacto">Contacto</a></button>
-       <button class="barralateral-transparente"><a href="../index.html">⬐Regresar</a></button>
-
-     
-    
-   </nav>
-
-
-   <section class="contenedor" id="contenedor">
-    <div class="contenedor_quiensoy">
-        <img src="/assets/img/foto_josue.jpg" alt="">
-        <a name="soy"></a>
-        <h1>¿Quien soy?</h1>
-        <p>
-          Mi nombre es Josué David Figueroa Flores
-          de Mérida,Yucatán, México.
-        </p>
-        <p>
-          Vivo en la localidad de Santa cruz palomeque a 25 min de la  ciudad
-          de Mérida, y aproximadamente 15 minutos de la Universidad Tecnologica
-          Metropolitana.
-          Actualmente estoy estudiando el 7 cuatrimestre de la carrera en ingenieria 
-          en desarrollo y gestion de software, con TSU en desarrollo de software
-          multiplataforma.
-        </p>
+  <!-- Sidebar -->
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#quiensoy">¿Quién soy?</a></li>
+          <li><a href="#profesionje">Mi profesión</a></li>
+          <li><a href="#proyectos">Mis Proyectos</a></li>
+          <li><a href="#contacto">Contáctame</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <div class="contenedor_trabajos">
-      <a name="trabajos"></a>
-        <h1>Trabajos</h1>
-        <!-- <p>
-          Durante mi estancia en la UTM, aprendi con el lenguaje de programacion C#
-          pero en mis estadias, aprendi Javascript
-        </p> -->
-        <section class="contenedor_trabajos-tecnologias">
-        <div>
-          <p style="color:red">
-            Conocimientos en:
-          </p>
-          <ul>
-            <li>.Net</li>
-            <li>Reactjs</li>
-            <li>Flutter</li>
-            <li>Sqlserver</li>
-          </ul>
+  </section>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- quiensoy -->
+    <section id="quiensoy" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <h1>Acerca de mi</h1>
+        <p>Soy ingeniero en Gestión y Desarrollo de Software Multiplataforma, soy gruaduado de la Universidad
+          tecnológica metropolitana.
+          <br> Tengo experiencia de aproximadamente 2 años en proyectos pequeños y medianos de desarrollo web,
+          móvil y de software de escritorio.</p>
+        <ul class="actions icons">
+          <li><a href="https://www.linkedin.com/in/manuel-eduardo-gamboa-campos-92b7261a5/"
+              class="button icon brands fa-linkedin" target="_blank">VER MÁS (LinkedIn)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- profesionje -->
+    <section id="profesionje" class="wrapper style3 fade-up">
+      <div class="inner">
+        <h2>Tecnologías y experiencia</h2>
+        <p>A lo largo de mi experiencia como desarrollador de software he adquirido habilidades en diversas
+          tecnologías y herramientas.</p>
+        <div class="features">
+          <section>
+            <span style="background-color: black !important;" class="icon solid major fa-facebook"></span>
+            <h3>Lorem ipsum amet</h3>
+            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+              ultricies erat dapibus.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-lock"></span>
+            <h3>Aliquam sed nullam</h3>
+            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+              ultricies erat dapibus.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-cog"></span>
+            <h3>Sed erat ullam corper</h3>
+            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+              ultricies erat dapibus.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-desktop"></span>
+            <h3>Veroeros quis lorem</h3>
+            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+              ultricies erat dapibus.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-link"></span>
+            <h3>Urna quis bibendum</h3>
+            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+              ultricies erat dapibus.</p>
+          </section>
+          <section>
+            <span class="icon major fa-gem"></span>
+            <h3>Aliquam urna dapibus</h3>
+            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+              ultricies erat dapibus.</p>
+          </section>
         </div>
-    
-        <div class="contenedor_trabajos-tecnologias-img">
-          <img src="/assets/img/javascript.png" alt="">
-          <img src="/assets/img/flutter.jpg" alt="">
-          <img src="/assets/img/net.png" alt="">
-          <img src="/assets/img/sql.png" alt="">
+        <ul class="actions">
+          <li><a href="generic.html" class="button">Learn more</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- proyectos -->
+    <section id="proyectos" class="wrapper style2 spotlights">
+      <section>
+        <a href="#" class="image"><img src="images/img_01.png" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Dashboard HTML Administrativo</h2>
+            <p>Proyecto hecho en HTML, CSS y JS. Este proyecto consiste en simular un sitio web
+              administrativo para la universidad, gestiona las actividades que son programadas por los
+              tutores de la carrera.</p>
+            <ul class="actions">
+              <li><a href="https://proyecto-ux01.web.app" target="_blank" class="button">VER PROYECTO</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </section>
-    
-        <!-- <p style="color:red">
-          Proyectos
-    
-        </p> -->
-        <p>
-          Los Dados: Un Proyecto personal cuando estaba en el proceso de
-          aprendisaje de Javascript, el cual es un juego que consta de lanzar un par
-          de dados, y otro par mas que simula ser lanzado por la "maquina", el que 
-          tenga el puntaje mas alto gana. Este proyecto se realizo con css,html:5
-          y Js vanilla
-    
-        
-        </p>
-        <p>
-          MCD: una tarea de la materia de seguridad informatica el cual 
-          pedia especificamente solucionar una problematica con el 
-          lenguaje de Javascript, el cual devia encontrar el maximo comun divisor 
-          de dos numeros
-        </p>
-        <p>
-          Gestion de tutores: Una tarea de la Materia de experiencia de usuario en la cual deviamos
-          diseñar, una plantilla web para una gestion de las actividades de tutores, la cual
-          mostraria su cronograma de actividades.
-        </p>
-    
-        <!-- inicia el contenedor de las imagens de los proyectos -->
-      <section class="contenedor_trabajos-imgtrabajo">
-        <p>El juego de los dados <a href="https://josue1919.github.io/miniproyecto3/">Ver trabajo</a></p>
-        <img src="/assets/img/dados.png" alt="dados">
-        <p>MCD <a href="">ver trabajo</a></p>
-        <img src="/assets/img/mcd.png" alt="">
       </section>
-      <div class="contenedor_contacto">
-        <a name="contacto"></a>
-        <h1 >Contacto</h1>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/josu%C3%A9-david-figueroa-flores-2842181b2/">Contactar</a></p>
-        <p>Facebook: Josue Figueroa</p>
-        <button> <a href="/correos/">Enviarme Un correo</a></button>
+      <section>
+        <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Feugiat consequat</h2>
+            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+              erat malesuada quis. Aliquam dapibus.</p>
+            <ul class="actions">
+              <li><a href="generic.html" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Ultricies aliquam</h2>
+            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+              erat malesuada quis. Aliquam dapibus.</p>
+            <ul class="actions">
+              <li><a href="generic.html" class="button">Learn more</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- contacto -->
+    <div id="contacto" class="wrapper style1 fade-up">
+      <div class="inner">
+        <h2>Contáctame</h2>
+        <p style="font-size: 16pt; font-weight: bold;">Por si deseas consultar información acerca de mí, puedes <br>
+          contactarme por medio de mis redes sociales o enviarme <br> un correo electronico 😃.</p>
+        <div class="split style1">
+          
+          <section id="app">
+            
+            <div class="row">
+              
+                <label>
+                  Asunto:
+                </label>
+                <input class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
+                </input>
+              
+            </div>
+           
+            <div class="row">
+              
+              <div class="col-lg-6">
+                <br><label>
+                  Nombre:
+                </label>
+                <input class="form-control" type="text" v-model="from_name" placeholder="Nombre">
+
+                </input>
+
+              </div>
+
+              <div class="col-md-6"> 
+                <br><label>
+                  Correo:
+                </label>
+                <input  type="email" v-model="from_email" placeholder="example@gmail.com">
+                </input>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"> 
+               <br> <label> Mensaje:</label>
+              
+              </div>
+                
+              <br>
+              <textarea class="form-control" rows="6" v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
+              <div class="col-md-12">
+                <br><button style="padding-right: 50px; padding-left: 50px;" @click="enviar" class="btn btn-success"> E n v i a r - M e n s a j e  </button>
+
+              </div>
+            </div>
+
+            
+           
+          </section>
+          <section>
+            <ul class="contact">
+              <li>
+                <h3>Residencia:</h3>
+                <span>México. <br>
+                  Mérida, Yucatán.<br /></span>
+              </li>
+              <li>
+                <h3>Email</h3>
+                <a href="https://www.gmail.com" target="_blank">manuelgambe99@gmail.com</a>
+              </li>
+              <li>
+                <h3>Telefono</h3>
+                <span>(000) 000-0000</span>
+              </li>
+              <li>
+                <h3>Redes Sociales</h3>
+                <ul class="icons">
+                  <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
+                  </li>
+                  <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+
+        </div>
       </div>
 
-   
+
+      </section>
+
+
+
+
     </div>
-   
- 
-    
-   
-   
-   
-   </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Todos los derechos reservados.</li>
+          <li>Diseñado por: <a href="#">Eduardo Gamboa</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollex.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("user_MqfB0sKiLPXMcK9i9LXjH");
+      })();
+      const vue = new Vue({
+        el: '#app',
+        data() {
+          return {
+            from_name: '',
+            from_email: '',
+            message: '',
+            subject: '',
+          }
+        },
+        methods: {
+          enviar() {
+            let data = {
+              from_name: this.from_name,
+              from_email: this.from_email,
+              message: this.message,
+              subject: this.subject,
+            };
+
+            emailjs.send("gmail", "template_m96r8uj", data)
+              .then(function (response) {
+                if (response.text === 'OK') {
+                  alert('El correo se ha enviado de forma exitosa');
+                }
+                console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+              }, function (err) {
+                alert('Ocurrió un problema al enviar el correo');
+                console.log("FAILED. error=", err);
+              });
+          }
+        }
+      });
+    </script>
 
 </body>
+
 </html>
