@@ -2561,6 +2561,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		padding-top: 25px;
+		padding-left: 25px;
 		height: 300px !important;
 		width: 100% !important;
 
