@@ -1,10 +1,141 @@
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJQFCVLDF5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-LJQFCVLDF5');
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJQFCVLDF5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJQFCVLDF5');
+</script>
   <!-- finaliza Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Rodrigo</title>
+    <link rel="stylesheet" href="/assets/css/josue.css">
+    <script src="https://kit.fontawesome.com/6b37ac19b8.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+  </head>
+
+<body>
+   <nav class="barralateral" id="barralateral">
+      
+       <section>
+        <button class="switch" id="switch" onclick="activar()">
+          <span><i class="fas fa-sun"></i></span>
+          <span><i class="fas fa-moon"></i></span>
+        </button>
+
+       </section>
+
+       <button class="barralateral-transparente"><a href="#soy">¿Quien soy?</a></button>
+       <button class="barralateral-transparente"><a href="#trabajos">Mis trabajos</a></button>
+       <button class="barralateral-transparente"><a href="#contacto">Contacto</a></button>
+       <button class="barralateral-transparente"><a href="../index.html">⬐Regresar</a></button>
+
+     
+    
+   </nav>
+
+
+   <section class="contenedor" id="contenedor">
+    <div class="contenedor_quiensoy">
+        <img src="/assets/img/foto_josue.jpg" alt="">
+        <a name="soy"></a>
+        <h1>¿Quien soy?</h1>
+        <p>
+          Mi nombre es Josué David Figueroa Flores
+          de Mérida,Yucatán, México.
+        </p>
+        <p>
+          Vivo en la localidad de Santa cruz palomeque a 25 min de la  ciudad
+          de Mérida, y aproximadamente 15 minutos de la Universidad Tecnologica
+          Metropolitana.
+          Actualmente estoy estudiando el 7 cuatrimestre de la carrera en ingenieria 
+          en desarrollo y gestion de software, con TSU en desarrollo de software
+          multiplataforma.
+        </p>
+    </div>
+    
+    <div class="contenedor_trabajos">
+      <a name="trabajos"></a>
+        <h1>Trabajos</h1>
+        <!-- <p>
+          Durante mi estancia en la UTM, aprendi con el lenguaje de programacion C#
+          pero en mis estadias, aprendi Javascript
+        </p> -->
+        <section class="contenedor_trabajos-tecnologias">
+        <div>
+          <p style="color:red">
+            Conocimientos en:
+          </p>
+          <ul>
+            <li>.Net</li>
+            <li>Reactjs</li>
+            <li>Flutter</li>
+            <li>Sqlserver</li>
+          </ul>
+        </div>
+    
+        <div class="contenedor_trabajos-tecnologias-img">
+          <img src="/assets/img/javascript.png" alt="">
+          <img src="/assets/img/flutter.jpg" alt="">
+          <img src="/assets/img/net.png" alt="">
+          <img src="/assets/img/sql.png" alt="">
+        </div>
+        </section>
+    
+        <!-- <p style="color:red">
+          Proyectos
+    
+        </p> -->
+        <p>
+          Los Dados: Un Proyecto personal cuando estaba en el proceso de
+          aprendisaje de Javascript, el cual es un juego que consta de lanzar un par
+          de dados, y otro par mas que simula ser lanzado por la "maquina", el que 
+          tenga el puntaje mas alto gana. Este proyecto se realizo con css,html:5
+          y Js vanilla
+    
+        
+        </p>
+        <p>
+          MCD: una tarea de la materia de seguridad informatica el cual 
+          pedia especificamente solucionar una problematica con el 
+          lenguaje de Javascript, el cual devia encontrar el maximo comun divisor 
+          de dos numeros
+        </p>
+        <p>
+          Gestion de tutores: Una tarea de la Materia de experiencia de usuario en la cual deviamos
+          diseñar, una plantilla web para una gestion de las actividades de tutores, la cual
+          mostraria su cronograma de actividades.
+        </p>
+    
+        <!-- inicia el contenedor de las imagens de los proyectos -->
+      <section class="contenedor_trabajos-imgtrabajo">
+        <p>El juego de los dados <a href="https://josue1919.github.io/miniproyecto3/">Ver trabajo</a></p>
+        <img src="/assets/img/dados.png" alt="dados">
+        <p>MCD <a href="">ver trabajo</a></p>
+        <img src="/assets/img/mcd.png" alt="">
+      </section>
+      <div class="contenedor_contacto">
+        <a name="contacto"></a>
+        <h1 >Contacto</h1>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/josu%C3%A9-david-figueroa-flores-2842181b2/">Contactar</a></p>
+        <p>Facebook: Josue Figueroa</p>
+        <button> <a href="/correos/">Enviarme Un correo</a></button>
+      </div>
+
+   
+    </div>
+   
+ 
+    
+   
+   
+   
+   </section>
+
+</body>
+</html>
