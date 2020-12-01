@@ -209,7 +209,7 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 							  <label>
 								Asunto:
 							  </label>
-							  <input class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
+							  <input id="asunto" class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
 							  </input>
 							
 						  </div>
@@ -220,7 +220,7 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 							  <br><label>
 								Nombre:
 							  </label>
-							  <input class="form-control" type="text" v-model="from_name" placeholder="Nombre">
+							  <input id="name" class="form-control" type="text" v-model="from_name" placeholder="Nombre">
 			  
 							  </input>
 			  
@@ -230,7 +230,7 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 							  <br><label>
 								Correo:
 							  </label>
-							  <input  type="email" v-model="from_email" placeholder="example@gmail.com">
+							  <input id="mail"  type="email" v-model="from_email" placeholder="example@gmail.com">
 							  </input>
 							</div>
 						  </div>
@@ -242,7 +242,7 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 							</div>
 							  
 							<br>
-							<textarea class="form-control" rows="6" v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
+							<textarea id="mesaje" class="form-control" rows="6" v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
 							<div class="col-md-12">
 							  <br><button style="padding-right: 50px; padding-left: 50px;" @click="enviar" class="btn btn-success"> E n v i a r - M e n s a j e  </button>
 			  
@@ -400,7 +400,18 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 			 },
 			 methods: {
 			   enviar() {
-				 let data = {
+
+
+				   var asunto=document.getElementById("asunto").value;
+				   var mensaje=document.getElementById("mesaje").value;
+					var correo=document.getElementById("mail").value;
+					var nombre=document.getElementById("name").value;
+
+					if(asunto===""||mensaje===""||correo===""||nombre===""){
+						alert("campo  vacio")
+					}else{
+
+						let data = {
 				   from_name: this.from_name,
 				   from_email: this.from_email,
 				   message: this.message,
@@ -417,6 +428,10 @@ Como parte de la materia de experiencia de usuario, nos pidieron elaborar una pl
 					 alert('Ocurrió un problema al enviar el correo');
 					 console.log("FAILED. error=", err);
 				   });
+					}
+
+				   
+				
 			   }
 			 }
 		   });
