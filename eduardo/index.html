@@ -191,50 +191,50 @@
 
             <div class="row">
 
-              <label>
-                Asunto:
-              </label>
-              <input class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
-              </input>
-
-            </div>
-
-            <div class="row">
-
-              <div class="col-lg-6">
-                <br><label>
+             
+							  <label>
+                  Asunto:
+                  </label>
+                  <input id="asunto" class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
+                  </input>
+                
+                </div>
+               
+                <div class="row">
+                
+                <div class="col-lg-6">
+                  <br><label>
                   Nombre:
-                </label>
-                <input class="form-control" type="text" v-model="from_name" placeholder="Nombre">
-
-                </input>
-
-              </div>
-
-              <div class="col-md-6">
-                <br><label>
+                  </label>
+                  <input id="name" class="form-control" type="text" v-model="from_name" placeholder="Nombre">
+          
+                  </input>
+          
+                </div>
+          
+                <div class="col-md-6"> 
+                  <br><label>
                   Correo:
-                </label>
-                <input type="email" v-model="from_email" placeholder="example@gmail.com">
-                </input>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <br> <label> Mensaje:</label>
-
-              </div>
-
-              <br>
-              <textarea class="form-control" rows="6" v-model="message" cols="30"
-                placeholder="Escribe tu mensaje aquí..."></textarea>
-              <div class="col-md-12">
-                <br><button style="padding-right: 50px; padding-left: 50px;" @click="enviar" class="btn btn-success"> E
-                  n v i a r - M e n s a j e </button>
-
-              </div>
-            </div>
+                  </label>
+                  <input id="mail"  type="email" v-model="from_email" placeholder="example@gmail.com">
+                  </input>
+                </div>
+                </div>
+          
+                <div class="row">
+                <div class="col-md-6"> 
+                 <br> <label> Mensaje:</label>
+                
+                </div>
+                  
+                <br>
+                <textarea id="mesaje" class="form-control" rows="6" v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <div class="col-md-12">
+                  <br><button style="padding-right: 50px; padding-left: 50px;" @click="enviar" class="btn btn-success"> E n v i a r - M e n s a j e  </button>
+          
+                </div>
+                </div>
+          
           </section>
           <section>
             <ul class="contact">
@@ -315,23 +315,34 @@
         },
         methods: {
           enviar() {
-            let data = {
-              from_name: this.from_name,
-              from_email: this.from_email,
-              message: this.message,
-              subject: this.subject,
-            };
+           
+				   var asunto=document.getElementById("asunto").value;
+				   var mensaje=document.getElementById("mesaje").value;
+					var correo=document.getElementById("mail").value;
+					var nombre=document.getElementById("name").value;
 
-            emailjs.send("gmail", "template_m96r8uj", data)
-              .then(function (response) {
-                if (response.text === 'OK') {
-                  alert('El correo se ha enviado de forma exitosa');
-                }
-                console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-              }, function (err) {
-                alert('Ocurrió un problema al enviar el correo');
-                console.log("FAILED. error=", err);
-              });
+					if(asunto===""||mensaje===""||correo===""||nombre===""){
+						alert("campo  vacio")
+					}else{
+
+						let data = {
+				   from_name: this.from_name,
+				   from_email: this.from_email,
+				   message: this.message,
+				   subject: this.subject,
+				 };
+	 
+				 emailjs.send("gmail", "template_m96r8uj", data)
+				   .then(function (response) {
+					 if (response.text === 'OK') {
+					   alert('El correo se ha enviado de forma exitosa');
+					 }
+					 console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+				   }, function (err) {
+					 alert('Ocurrió un problema al enviar el correo');
+					 console.log("FAILED. error=", err);
+				   });
+					}
           }
         }
       });
