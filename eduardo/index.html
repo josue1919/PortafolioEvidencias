@@ -187,7 +187,7 @@
           contactarme por medio de mis redes sociales o enviarme <br> un correo electronico 😃.</p>
         <div class="split style1">
 
-          <section id="app">
+          <form id="app">
 
             <div class="row">
 
@@ -195,7 +195,7 @@
 							  <label>
                   Asunto:
                   </label>
-                  <input id="asunto" class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
+                  <input required id="asunto" class="form-control" type="text" v-model="subject" placeholder="Escribe el asunto...">
                   </input>
                 
                 </div>
@@ -206,7 +206,7 @@
                   <br><label>
                   Nombre:
                   </label>
-                  <input id="name" class="form-control" type="text" v-model="from_name" placeholder="Nombre">
+                  <input required id="name" class="form-control" type="text" v-model="from_name" placeholder="Nombre">
           
                   </input>
           
@@ -216,7 +216,7 @@
                   <br><label>
                   Correo:
                   </label>
-                  <input id="mail"  type="email" v-model="from_email" placeholder="example@gmail.com">
+                  <input required id="mail"  type="email" v-model="from_email" placeholder="example@gmail.com">
                   </input>
                 </div>
                 </div>
@@ -228,14 +228,14 @@
                 </div>
                   
                 <br>
-                <textarea id="mesaje" class="form-control" rows="6" v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <textarea required id="mesaje" class="form-control" rows="6" v-model="message" cols="30" placeholder="Escribe tu mensaje aquí..."></textarea>
                 <div class="col-md-12">
                   <br><button style="padding-right: 50px; padding-left: 50px;" @click="enviar" class="btn btn-success"> E n v i a r - M e n s a j e  </button>
           
                 </div>
                 </div>
           
-          </section>
+              </form>
           <section>
             <ul class="contact">
               <li>
